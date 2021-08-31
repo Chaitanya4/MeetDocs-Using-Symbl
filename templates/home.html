@@ -1,0 +1,75 @@
+<html>
+   <style>
+      body{
+         background-color: rgb(184, 189, 199);
+         color:rgb(97, 100, 114)
+      }
+      input[type=text],input[type=email],input[type=password],select {
+        width: 100%;
+        padding: 12px 20px;
+        margin: 8px 0;
+        display: inline-block;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-sizing: border-box;
+      }
+      
+      input[type=submit] {
+        width: 100%;
+        background-color: rgb(122, 153, 216);
+        color: white;
+        padding: 14px 20px;
+        margin: 8px 0;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+      }
+      
+      input[type=submit]:hover {
+        background-color: rgb(101, 137, 209);
+      }
+      
+      div {
+        border-radius: 5px;
+        background-color: rgb(184, 189, 199);
+        padding: 20px;
+      }
+      .col-container {
+  display: table;
+  width: 100%;
+}
+.col {
+  display: table-cell;
+  padding: 16px;
+}
+img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+      </style>
+   <body>
+      <img src="static/index.jpeg" alt="MeetDocs">
+         <h1 style="text-align: center; color:rgb(105, 117, 139)"><i>MeetDocs</i></h1>
+         <p style="text-align: center; color:rgb(107, 109, 112)">Get Meeting Transciption, Topics Covered, Action Items and Follow-ups all at your mail
+         </p>
+      
+      <div class="col-container">
+         <div class="col"></div>
+      <div class="col">
+      <form action = "http://localhost:5000/mail" method = "POST">
+         <h3 style="text-align: center; color:rgb(105, 117, 139)">Enter the details</h3>
+         <p>Location Of Video File: <input type = "text" name = "videofile" placeholder="Enter the Location Of Video File stored in your device"/></p>
+         <p>App ID: <input type = "text" name = "appId"  placeholder="Enter your symbl App ID"/></p>
+         <p>App Secret: <input type = "text" name = "appSecret" placeholder="Enter your symbl App Secret"/></p>
+         <p>Sender Email: <input type = "email" name = "semail" placeholder="Enter sender email address"/></p>
+         <p>Sender Password: <input type ="password" name = "spassword" placeholder="Enter sender email password"/></p>
+         <p>Email Subject: <input type = "text" name = "subject" placeholder="Enter email subject"/></p>
+         <p>Receiver Email: <input type ="email" name = "remail" placeholder="Enter receiver email address"/></p>
+         <p><input type = "submit" value = "SUBMIT" /></p>
+      </form>
+   </div>
+   <div class="col"></div>
+</div>
+   </body>
+</html>
