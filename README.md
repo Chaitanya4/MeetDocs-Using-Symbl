@@ -3,7 +3,7 @@ MeetDocs allows employees to easily review meetings by transcribing the recordin
 
 
 ## MeetDocs Flow
-Employee pastes meeting link, enter symbl app id, app secret, sender email & password, receiver eamil.
+Employee pastes meeting link, enter symbl app id, app secret, sender email & password, receiver email.
 
 Symbl POST Video URL Async API is called for processing video.
 
